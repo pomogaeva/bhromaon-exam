@@ -282,26 +282,27 @@ nav {
   &-item {
     padding-top: 20px;
     text-align: center;
-
-    &:first-of-type {
-      color: map-get($color, 'icon-search');
-    }
-
-    &:nth-of-type(2) {
-      color: map-get($color, 'icon-select');
-    }
-
-    &:last-of-type {
-      color: map-get($color, 'icon-book');
-    }
   }
 
   &-link {
     font-size: 48px;
 
-    &:hover {
+    &:hover,
+    &:active {
       opacity: .7;
     }
+  }
+
+  &-icon.fa-search {
+    color: map-get($color, 'icon-search');
+  }
+
+  &-icon.fa-check-circle {
+    color: map-get($color, 'icon-select');
+  }
+
+  &-icon.fa-thumbs-up {
+    color: map-get($color, 'icon-book');
   }
 
   &-desc {
